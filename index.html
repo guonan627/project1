@@ -12,12 +12,15 @@
     <!-- Bootstrap5 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="http://cdn.staticfile.org/normalize/3.0.1/normalize.min.css" type="text/css"/>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- js -->
     <script src="js/scripts.js"></script>
   </head>
@@ -25,39 +28,41 @@
     <!-- Navbar -->
     <nav>
       <div class="inner-width">
-        <a href="#" class="logo"></a>
+        <a href="./index.html" class="logo"></a>
         <button class="menu-toggler">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div class="menu-full">
-          <a href="#home">Home</a>
+          <a href="./index.html" >Home</a>
           <a href="#about">About</a>
-          <a href="#services">Special Offers</a>
-          <a href="#education">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a href="#testimonials" >Testimonials</a>
+          <a href="#offers" >Specials</a>
+          <a href="#packages" >Packages</a>
+          <a href="#gallery" >Gallery</a>
+          <a href="#contact" >Contact</a>
         </div>
       </div>
     </nav>  
-    
-    <!-- Home -->
-    <section id="home">
-        <div class="inner-width">
-          <div class="content">
-            <h1>Hi! I'm </h1>
-            <div class="sm">
-              <a href="#" class="fab fa-facebook-f"></a>
-              <a href="#" class="fab fa-twitter"></a>
-              <a href="#" class="fab fa-instagram"></a>
-              <a href="#" class="fab fa-linkedin-in"></a>
-            </div>
-            <div class="buttons">
-              <a href="#">Contact me</a>
-            </div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner-width">
+        <div class="content">
+          <h1>Hi! I'm </h1>
+          <div class="sm">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+          <div class="buttons">
+            <a href="#">Contact me</a>
           </div>
         </div>
-      </section>        
+      </div>  
+    </header>        
 
     <!-- About -->
     <section id="about">
@@ -73,7 +78,7 @@
               <span>FAMILY PHOTOGRAPHER</span>
             </h3>
             <p>
-              I am a Brisbane based newborn and family photographer specialising in newborn photography. I have my studio in Springfield Lakes, but will travel to your home for lifestyle and documentary sessions or your chosen outdoor location.
+              I am a Brisbane based newborn and family photographer specialising in newborn photography. I have my studio in Sunnybank Hills, but will travel to your home for lifestyle and documentary sessions or your chosen outdoor location.
             </p>
             <p>
               Photography sessions with me are usually relaxed and unrushed. You will hopefully feel like you are catching up with an old friend. You don’t need to worry about knowing what to do, I will give you as much or as little direction as required. I will work hard to make sure you get photos beautiful images you can pass down to your children and their children.
@@ -94,66 +99,12 @@
       </div>
     </section>
 
-    <!-- Offers -->
-    <section id="services" class="dark">
-      <div class="inner-width">
-        <h1 class="section-title">Special Offers (limited time only)</h1>
-        <div class="offers">
-          <div class="card offers__content" >
-            <img src="./images/offer1.jpg" class="card-img-top" alt="offer1">
-            <div class="card-body">
-              <h5 class="card-title">Petite Package</h5>
-              <p>$350</p>
-              <ul class="card-text">
-                <li> 1 hour studio photo shoot (wrapped poses only)</li>
-                <li> 5 edited digital images in high resolution</li>
-                <li> 5 (5×7 in.) printed images</li>
-                <li> photos with parents and siblings</li>
-                <li> all images from the shoot with the light and colour correction</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Enquiry</a>
-           </div>
-          </div>
-          <div class="card offers__content" >
-            <img src="./images/offer2.jpg" class="card-img-top" alt="offer2">
-            <div class="card-body">
-              <h5 class="card-title">Essential Package</h5>
-              <p>$450</p>
-              <ul class="card-text">
-                <li> up to 2 hours studio photo shoot</li>
-                <li> 10 edited digital images in high resolution</li>
-                <li> 10 (5×7 in.) printed images</li>
-                <li> photos with parents and siblings</li>
-                <li> all images from the shoot with the light and colour correction</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Enquiry</a>
-            </div>
-          </div>
-          <div class="card offers__content" >
-            <img src="./images/offer3.jpg" class="card-img-top" alt="Offers">
-            <div class="card-body">
-              <h5 class="card-title">Premium Package</h5>
-              <p>$550</p>
-              <ul class="card-text">
-                <li> up to 3 hours studio photo shoot (wrapped poses only)</li>
-                <li> 20 edited digital images in high resolution</li>
-                <li> 20 (5×7 in.) printed images</li>
-                <li> photos with parents and siblings</li>
-                <li> all images from the shoot with the light and colour correction</li>
-              </ul>
-              <a href="#" class="btn btn-primary">Enquiry</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
+    <!-- Testimonials -->
+    <section id="testimonials" class="dark">
       <div class="inner-width">
         <h1 class="section-title">Testimonials</h1>
         <div class="time-line">
-          <div class="block">
+          <div class="testimonial">
             <h3>Jan 2021</h3>
             <p>
               “We are delighted with the pictures Louise took of us and our newborn baby. We love the natural style – just what we were after! Veronica was friendly and helpful from start to finish.” 
@@ -161,7 +112,7 @@
             <span>Matthew</span>
           </div>
 
-          <div class="block">
+          <div class="testimonial">
             <h3>Oct 2020</h3>
             <p>
               “We were delighted. The entire experience was very relaxed and resulted in some great natural shots – exactly what we wanted. Our toddler can be strong willed at times, but Veronica was excellent at engaging her and capturing that engagement.” 
@@ -169,7 +120,7 @@
             <span>Chris</span>
           </div>
 
-          <div class="block">
+          <div class="testimonial">
             <h3>Sep 2019</h3>
             <p>
               “We are so pleased with our family photos. It’s wonderful to be able to capture our daughter at this magical age. The photos are beautiful and we will treasured them for many years to come.” 
@@ -177,7 +128,7 @@
             <span>Antonia</span>
           </div>
 
-          <div class="block">
+          <div class="testimonial">
             <h3>Dec 2018</h3>
             <p>
               “Beautiful photos that we will cherish after an enjoyable and relaxed photo session. What patience you have with new parents! Thank you Veronica.” 
@@ -188,85 +139,257 @@
       </div>
     </section>
 
-    <!-- Works -->
-    <section id="works" class="dark">
+    <!-- Offers -->
+    <section id="offers">
+        <div class="inner-width">
+          <h1 class="section-title">Special Offers (limited time only)</h1>
+          <div class="offers">
+            <div class="card offers__content" >
+              <img src="./images/offer1.jpg" class="card-img-top" alt="offer1">
+              <div class="card-body">
+                <h5 class="card-title">Petite Newborn</h5>
+                <p>$350</p>
+                <ul class="card-text">
+                  <li> 1 hour studio photo shoot (wrapped poses only)</li>
+                  <li> 5 edited digital images in high resolution</li>
+                  <li> 5 (5×7 in.) printed images</li>
+                  <li> photos with parents and siblings</li>
+                  <li> all images from the shoot with the light and colour correction</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Enquiry</a>
+             </div>
+            </div>
+            <div class="card offers__content" >
+              <img src="./images/offer2.jpg" class="card-img-top" alt="offer2">
+              <div class="card-body">
+                <h5 class="card-title">Essential Newborn</h5>
+                <p>$450</p>
+                <ul class="card-text">
+                  <li> up to 2 hours studio photo shoot</li>
+                  <li> 10 edited digital images in high resolution</li>
+                  <li> 10 (5×7 in.) printed images</li>
+                  <li> photos with parents and siblings</li>
+                  <li> all images from the shoot with the light and colour correction</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Enquiry</a>
+              </div>
+            </div>
+            <div class="card offers__content" >
+              <img src="./images/offer3.jpg" class="card-img-top" alt="Offers">
+              <div class="card-body">
+                <h5 class="card-title">Premium Newborn</h5>
+                <p>$550</p>
+                <ul class="card-text">
+                  <li> up to 3 hours studio photo shoot (wrapped poses only)</li>
+                  <li> 20 edited digital images in high resolution</li>
+                  <li> 20 (5×7 in.) printed images</li>
+                  <li> photos with parents and siblings</li>
+                  <li> all images from the shoot with the light and colour correction</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Enquiry</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="dark">
+      <div class="inner-width container"></div>
+        <h1 class="section-title">Packages</h1>
+        <!-- Row1 -->
+        <div class="package__row row">
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package1.jpg);">
+              <h3>Petite Newborn</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Aura kasih</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+
+            <div class="package__bg" style="background-image:url(./images/package2.jpg);">
+              <h3>Essential Newborn</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Marissa Coleman</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package3.jpg);">
+              <h3>Premium Newborn</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Jean Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package4.jpg);">
+              <h3>Milestone</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Aura kasih</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row2 -->
+        <div class="package__row row">
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package5.jpg);">
+              <h3>Essential Family</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Aura kasih</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package6.jpg);">
+              <h3>Premium Family</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Marissa Coleman</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package7.jpg); ">
+              <h3>Maternity Essential</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Jean Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="package">
+            <div class="package__bg" style="background-image:url(./images/package8.jpg); ">
+              <h3>Maternity Premium</h3>
+            </div>
+            <div class="package__content">
+              <div class="profile">
+                <br>
+                <h2 class="title">Aura kasih</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eos?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Feel free ask about details</a>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
       <div class="inner-width">
         <h1 class="section-title">Gallery</h1>
-        <div class="works">
-          <a href="images/works/1.jpg" class="work">
-            <img src="images/works/1.jpg" alt="" />
-            <div class="info">
+        <div class="gallery">
+          <a href="images/works/1.jpg" class="gallery__work">
+            <img src="images/works/1.jpg" alt="1" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
 
-          <a href="images/works/2.jpg" class="work">
-            <img src="images/works/2.jpg" alt="" />
-            <div class="info">
+          <a href="images/works/2.jpg" class="gallery__work">
+            <img src="images/works/2.jpg" alt="2" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
 
-          <a href="images/works/3.jpg" class="work">
-            <img src="images/works/3.jpg" alt="" />
-            <div class="info">
+          <a href="images/works/3.jpg" class="gallery__work">
+            <img src="images/works/3.jpg" alt="3" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
 
-          <a href="images/works/4.jpg" class="work">
-            <img src="images/works/4.jpg" alt="" />
-            <div class="info">
+          <a href="images/works/4.png" class="gallery__work">
+            <img src="images/works/4.png" alt="4" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
 
-          <a href="images/works/5.jpg" class="work">
-            <img src="images/works/5.jpg" alt="" />
-            <div class="info">
+          <a href="images/works/5.jpg" class="gallery__work">
+            <img src="images/works/5.jpg" alt="5" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
 
-          <a href="images/works/6.jpg" class="work">
-            <img src="images/works/6.jpg" alt="" />
-            <div class="info">
+          <a href="images/works/6.jpg" class="gallery__work">
+            <img src="images/works/6.jpg" alt="6" />
+            <div class="gallery__work-info">
               <h3>Work Title</h3>
               <div class="cat">Music, Headset</div>
             </div>
           </a>
         </div>
+        <a href="#" class="btn">View more</a>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="dark">
       <div class="inner-width">
         <h1 class="section-title">Get in touch</h1>
-        <div class="contact-info">
-          <div class="item">
+        <div class="contact__info">
+          <div class="contact__info-detail">
             <i class="fas fa-mobile-alt"></i>
-            +111 111111111
+            +61 456616208
           </div>
-
-          <div class="item">
+          <div class="contact__info-detail">
             <i class="fas fa-envelope"></i>
-            email@address.com
+            veronica@gmail.com
           </div>
-
-          <div class="item">
+          <div class="contact__info-detail">
             <i class="fas fa-map-marker-alt"></i>
-            New York, United States
+            Brisbane, Queensland, Australia
           </div>
         </div>
-
-        <form action="#" class="contact-form">
-          <input type="text" class="nameZone" placeholder="Your Full Name" />
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="1220" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=151%20Hellawell%20Rd,%20Sunnybank%20Hills%20QLD%204109&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://putlocker-is.org">putlocker</a><br>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:1220px;}</style>
+            <a href="https://www.embedgooglemap.net">google maps embedded map</a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1220px;}</style>
+          </div>
+        </div>           
+        <form action="#" class="contact__form">
+          <input type="text" class="nameZone" placeholder="Your Name" />
           <input type="email" class="emailZone" placeholder="Your Email" />
           <input type="text" class="subjectZone" placeholder="Subject" />
           <textarea class="messageZone" placeholder="Message"></textarea>

@@ -19,6 +19,7 @@ $(document).ready(function () {
   });
 });
 
+
 var currentImg = 0;
 var imgArr = ["bg2.jpg","bg4.jpg","bg6.jpg","bg7.jpg"]; //定义一个数组来存放所有的图片
 

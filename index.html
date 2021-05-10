@@ -6,7 +6,7 @@
     <title>Veronica Photography</title>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
-    <!-- fontawesome -->
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Bootstrap5 -->
@@ -67,9 +67,9 @@
     <section id="about">
       <div class="inner-width">
         <h1 class="section-title">About</h1>
-        <div class="about-content">
-          <img src="images/profile.png" alt="" class="about-pic" />
-          <div class="about-text">
+        <div class="about__content">
+          <img src="images/profile.png" alt="" class="about__content-pic" />
+          <div class="about__content-text">
             <h2> Hi! My name is Veronica.</h2>
             <h3>
               <span>NEWBORN</span>
@@ -102,7 +102,7 @@
     <section id="testimonials" class="dark">
       <div class="inner-width">
         <h1 class="section-title">Testimonials</h1>
-        <div class="time-line">
+        <div class="testimonial__timeline">
           <div class="testimonial">
             <h3>Jan 2021</h3>
             <p>
@@ -178,7 +178,7 @@
                     </div>
                   </div>
                 </div>
-             </div>
+              </div>
             </div>
             <div class="card offers__content" >
               <img src="./images/offer2.jpg" class="card-img-top" alt="offer2">
@@ -277,7 +277,7 @@
               <h3>Petite Newborn</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Petite Newborn</h2>
                 <p>$350</p>
                 <ul>
@@ -296,7 +296,7 @@
               <h3>Essential Newborn</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Essential Newborn</h2>
                 <p>$450</p>
                 <ul>
@@ -315,7 +315,7 @@
               <h3>Premium Newborn</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Premium Newborn</h2>
                 <p>$550</p>
                 <ul>
@@ -334,7 +334,7 @@
               <h3>Milestone</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Milestone</h2>
                 <p>$1200</p>
                 <ul>
@@ -356,7 +356,7 @@
               <h3>Essential Family</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Essential Family</h2>
                 <p>$350</p>
                 <ul>
@@ -375,7 +375,7 @@
               <h3>Premium Family</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Premium Family</h2>
                 <p>$450</p>
                 <ul>
@@ -394,7 +394,7 @@
               <h3>Maternity Essential</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Maternity Essential</h2>
                 <p>$350</p>
                 <ul>
@@ -413,7 +413,7 @@
               <h3>Maternity Premium</h3>
             </div>
             <div class="package__content">
-              <div class="profile">
+              <div class="package-details">
                 <h2 class="title">Maternity Premium</h2>
                 <p>$450</p>
                 <ul>
@@ -502,14 +502,17 @@
         </div>
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe width="1220" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=151%20Hellawell%20Rd,%20Sunnybank%20Hills%20QLD%204109&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=151%20Hellawell%20Rd,%20Sunnybank%20Hills%20QLD%204109&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             <a href="https://putlocker-is.org">putlocker</a><br>
             <style>.mapouter{position:relative;text-align:right;height:500px;width:1220px;}</style>
             <a href="https://www.embedgooglemap.net">google maps embedded map</a>
             <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1220px;}</style>
           </div>
         </div>           
-        <form action="#" class="contact__form">
+        <form 
+        action="https://formspree.io/f/myylegpz"
+        method="POST"
+        class="contact__form">
           <input 
             id = "contact__form-name"
             type= "text" 
@@ -518,6 +521,7 @@
             class="nameZone" 
             placeholder="Your Name"
             pattern = "(?!.*fuck)[A-Za-z]{3,128}"
+            onchange="validateForm()"
             required />
           <input 
             type="email" 
@@ -526,7 +530,8 @@
             id = "contact__form-email"
             title= "email"
             name = "contact__form-email"
-            pattern = "a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            onchange="validateForm()"
             required/>
           <input 
             type="text" 
@@ -536,24 +541,28 @@
             title= "subject"
             name = "contact__form-subject"
             pattern = "(?!.*fuck)[A-Za-z]{3,128}"
+            onchange="validateForm()"
             required
-            />
+          />
           <textarea 
-          class="messageZone" 
-          placeholder="Message"
-          id = "contact__form-message"
-          title= "message"
-          name = "contact__form-message"
-          pattern = "[A-Za-z]{3,128}"
-          required></textarea>
+            class="messageZone" 
+            placeholder="Message"
+            id = "contact__form-message"
+            title= "message"
+            name = "contact__form-message"
+            pattern = "[A-Za-z]{3,128}"
+            onchange="validateForm()"
+            required></textarea>
           <input 
-          type="submit" 
-          value="Send Message" 
-          class="btn"
-          id="contact__form-submit"
-          onclick="validateForm()"
-          onsubmit="return validateForm()"
-       />
+            type="submit" 
+            value="Send Message" 
+            class="btn"
+            id="contact__form-submit"
+            disabled
+            onclick="validateForm()"
+            onsubmit="return validateForm()"
+          />
+          <div class="contact__form-error" id="contact__form-error"></div>
         </form>
       </div>
     </section>

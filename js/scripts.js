@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 // header background change
 var currentImg = 0;
-var imgArr = ["bg2.jpg","bg4.jpg","bg6.jpg","bg7.jpg"]; //定义一个数组来存放所有的图片
+var imgArr = ["bg2.jpg", "bg4.jpg", "bg6.jpg", "bg7.jpg"]; //定义一个数组来存放所有的图片
 function changeImg() {
   if (currentImg >= imgArr.length - 1) {
     currentImg = 0;
@@ -38,32 +38,45 @@ setInterval(changeImg, 3000); //每隔5s就换一个
 
 // form validation
 function validateForm() {
-  const validForm = true;
-  // name 
+  let isValid = true;
+  const errorMessage = {};
+  // name
   const name = document.getElementById("contact__form-name");
-  if (!name.checkValidity()){
-    validForm = false;
+  if (!name.checkValidity()) {
+    isValid = false;
+    errorMessage.name = "Name is invalid";
   }
   //email
   const email = document.getElementById("contact__form-email");
-  if (!email.checkValidity()){
-    validForm = false;
+  if (!email.checkValidity()) {
+    isValid = false;
+    errorMessage.email = "Email is invalid";
   }
   // subject
   const subject = document.getElementById("contact__form-subject");
-  if (!subject.checkValidity()){
-    validForm = false;
+  if (!subject.checkValidity()) {
+    isValid = false;
+    errorMessage.subject = "Subject is invalid";
   }
   // message
   const message = document.getElementById("contact__form-message");
-  if (!message.checkValidity()){
-    validForm = false;
+  if (!message.checkValidity()) {
+    isValid = false;
+    errorMessage.message = "Message is invalid";
   }
-  const submitBtn = document.getElementById("contact_form-submit");
-  
-  if (validForm === false){
-    submitBtn.disable = false;
+  const submitBtn = document.getElementById("contact__form-submit");
+  const errors = document.getElementById("contact__form-error");
+
+  if (isValid) {
+    submitBtn.disabled = false;
   } else {
-    submitBtn.disable = true;
+    submitBtn.disabled = true;
+    console.log(errorMessage);
+    errors.innerHTML = `
+      <p>${errorMessage.name ? errorMessage.name : ""}</p>
+      <p>${errorMessage.email ? errorMessage.email : ""}</p>
+      <p>${errorMessage.subject ? errorMessage.subject : ""}</p>
+      <p>${errorMessage.message ? errorMessage.message : ""}</p>
+    `;
   }
-};
+}

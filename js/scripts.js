@@ -1,3 +1,4 @@
+// section change
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -19,10 +20,9 @@ $(document).ready(function () {
   });
 });
 
-
+// header background change
 var currentImg = 0;
 var imgArr = ["bg2.jpg","bg4.jpg","bg6.jpg","bg7.jpg"]; //定义一个数组来存放所有的图片
-
 function changeImg() {
   if (currentImg >= imgArr.length - 1) {
     currentImg = 0;
@@ -34,5 +34,36 @@ function changeImg() {
 
   img.style.backgroundImage = "url(./images/" + imgArr[currentImg] + ")"; //这里特别要注意引号的使用，因为img[curentImg]是个变量，所以用"+变量+"
 }
-
 setInterval(changeImg, 3000); //每隔5s就换一个
+
+// form validation
+function validateForm() {
+  const validForm = true;
+  // name 
+  const name = document.getElementById("contact__form-name");
+  if (!name.checkValidity()){
+    validForm = false;
+  }
+  //email
+  const email = document.getElementById("contact__form-email");
+  if (!email.checkValidity()){
+    validForm = false;
+  }
+  // subject
+  const subject = document.getElementById("contact__form-subject");
+  if (!subject.checkValidity()){
+    validForm = false;
+  }
+  // message
+  const message = document.getElementById("contact__form-message");
+  if (!message.checkValidity()){
+    validForm = false;
+  }
+  const submitBtn = document.getElementById("contact_form-submit");
+  
+  if (validForm === false){
+    submitBtn.disable = false;
+  } else {
+    submitBtn.disable = true;
+  }
+};

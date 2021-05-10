@@ -15,8 +15,8 @@
 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="http://cdn.staticfile.org/normalize/3.0.1/normalize.min.css" type="text/css"/>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- sass -->
+    <link rel="stylesheet" href="scss/style.css" />
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- js -->
@@ -510,11 +510,50 @@
           </div>
         </div>           
         <form action="#" class="contact__form">
-          <input type="text" class="nameZone" placeholder="Your Name" />
-          <input type="email" class="emailZone" placeholder="Your Email" />
-          <input type="text" class="subjectZone" placeholder="Subject" />
-          <textarea class="messageZone" placeholder="Message"></textarea>
-          <input type="submit" value="Send Message" class="btn" />
+          <input 
+            id = "contact__form-name"
+            type= "text" 
+            title= "name"
+            name = "contact__form-name"
+            class="nameZone" 
+            placeholder="Your Name"
+            pattern = "(?!.*fuck)[A-Za-z]{3,128}"
+            required />
+          <input 
+            type="email" 
+            class="emailZone" 
+            placeholder="Your Email"
+            id = "contact__form-email"
+            title= "email"
+            name = "contact__form-email"
+            pattern = "a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required/>
+          <input 
+            type="text" 
+            class="subjectZone" 
+            placeholder="Subject"
+            id = "contact__form-subject"
+            title= "subject"
+            name = "contact__form-subject"
+            pattern = "(?!.*fuck)[A-Za-z]{3,128}"
+            required
+            />
+          <textarea 
+          class="messageZone" 
+          placeholder="Message"
+          id = "contact__form-message"
+          title= "message"
+          name = "contact__form-message"
+          pattern = "[A-Za-z]{3,128}"
+          required></textarea>
+          <input 
+          type="submit" 
+          value="Send Message" 
+          class="btn"
+          id="contact__form-submit"
+          onclick="validateForm()"
+          onsubmit="return validateForm()"
+       />
         </form>
       </div>
     </section>

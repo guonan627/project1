@@ -36,6 +36,7 @@ function changeImg() {
 }
 setInterval(changeImg, 3000); //每隔5s就换一个
 
+
 // form validation
 function validateForm() {
   let isValid = true;
@@ -69,6 +70,7 @@ function validateForm() {
 
   if (isValid) {
     submitBtn.disabled = false;
+    errors.innerHTML = "";
   } else {
     submitBtn.disabled = true;
     console.log(errorMessage);

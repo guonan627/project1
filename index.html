@@ -553,6 +553,7 @@
             pattern = "[A-Za-z]{3,128}"
             onchange="validateForm()"
             required></textarea>
+          <div class="contact__form-error" id="contact__form-error"></div>
           <input 
             type="submit" 
             value="Send Message" 
@@ -562,7 +563,6 @@
             onclick="validateForm()"
             onsubmit="return validateForm()"
           />
-          <div class="contact__form-error" id="contact__form-error"></div>
         </form>
       </div>
     </section>

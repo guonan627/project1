@@ -47,6 +47,12 @@ function validateForm() {
     isValid = false;
     errorMessage.name = "Name is invalid";
   }
+  //phone
+  const phone = document.getElementById("contact__form-phone");
+  if (!phone.checkValidity()) {
+    isValid = false;
+    errorMessage.phone = "phone is invalid";
+  }
   //email
   const email = document.getElementById("contact__form-email");
   if (!email.checkValidity()) {
@@ -76,6 +82,7 @@ function validateForm() {
     console.log(errorMessage);
     errors.innerHTML = `
       <p>${errorMessage.name ? errorMessage.name : ""}</p>
+      <p>${errorMessage.phone ? errorMessage.phone : ""}</p>
       <p>${errorMessage.email ? errorMessage.email : ""}</p>
       <p>${errorMessage.subject ? errorMessage.subject : ""}</p>
       <p>${errorMessage.message ? errorMessage.message : ""}</p>

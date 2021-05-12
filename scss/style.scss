@@ -584,7 +584,13 @@ border-radius: 50%;
     border-radius: 4px;
     color: themes.$dark-background;
   }
-  .nameZone, .emailZone {
+  .required::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "/f621";
+    color: red;
+  }
+  .nameZone, .phoneZone, .dateZone, .locationZone {
     max-width: calc(50% - 10px);
   }
   .messageZone {
@@ -614,6 +620,7 @@ border-radius: 50%;
     
   }
 }
+
 
 /* footer  */
 footer {

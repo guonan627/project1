@@ -591,7 +591,13 @@ section.dark .section-title::after {
   border-radius: 4px;
   color: #353b48;
 }
-.contact__form .nameZone, .contact__form .emailZone {
+.contact__form .required::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "/f621";
+  color: red;
+}
+.contact__form .nameZone, .contact__form .phoneZone, .contact__form .dateZone, .contact__form .locationZone {
   max-width: calc(50% - 10px);
 }
 .contact__form .messageZone {

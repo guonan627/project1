@@ -469,6 +469,33 @@ section.dark .section-title::after {
   background-color: #be905c;
 }
 
+.download {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 30px;
+  text-align: center;
+  background-color: #ed9876;
+  color: #fff;
+  padding: 15px 2px;
+  transition: 0.2s linear;
+  position: relative;
+  height: 60px;
+  width: 120px;
+  margin: 40px 35px 20px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.download:hover {
+  text-decoration: none;
+  background: #be905c;
+  color: white;
+}
+
 .package:hover,
 .package.is-active {
   flex-grow: 2;
@@ -532,6 +559,7 @@ section.dark .section-title::after {
   transform: scale(1);
 }
 .gallery__button {
+  margin-top: 20px;
   color: black;
   padding: 0 20px;
   font-size: 20px;
